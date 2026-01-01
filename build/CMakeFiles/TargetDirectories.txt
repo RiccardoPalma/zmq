@@ -1,0 +1,5 @@
+/home/riccardo/repos/zmq/build/CMakeFiles/publisher.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/sub_a.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/sub_b.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/edit_cache.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/rebuild_cache.dir
