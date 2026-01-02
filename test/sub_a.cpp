@@ -1,5 +1,5 @@
 #include <iostream>
-#include "cppzmq/zmq.hpp"
+#include "zmq.hpp"
 
 int main() {
     zmq::context_t ctx;

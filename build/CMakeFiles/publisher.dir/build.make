@@ -69,28 +69,28 @@ include CMakeFiles/publisher.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/publisher.dir/flags.make
 
-CMakeFiles/publisher.dir/publisher.cpp.o: CMakeFiles/publisher.dir/flags.make
-CMakeFiles/publisher.dir/publisher.cpp.o: /home/riccardo/repos/zmq/publisher.cpp
-CMakeFiles/publisher.dir/publisher.cpp.o: CMakeFiles/publisher.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/publisher.dir/publisher.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/publisher.dir/publisher.cpp.o -MF CMakeFiles/publisher.dir/publisher.cpp.o.d -o CMakeFiles/publisher.dir/publisher.cpp.o -c /home/riccardo/repos/zmq/publisher.cpp
+CMakeFiles/publisher.dir/test/publisher.cpp.o: CMakeFiles/publisher.dir/flags.make
+CMakeFiles/publisher.dir/test/publisher.cpp.o: /home/riccardo/repos/zmq/test/publisher.cpp
+CMakeFiles/publisher.dir/test/publisher.cpp.o: CMakeFiles/publisher.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/publisher.dir/test/publisher.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/publisher.dir/test/publisher.cpp.o -MF CMakeFiles/publisher.dir/test/publisher.cpp.o.d -o CMakeFiles/publisher.dir/test/publisher.cpp.o -c /home/riccardo/repos/zmq/test/publisher.cpp
 
-CMakeFiles/publisher.dir/publisher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/publisher.dir/publisher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riccardo/repos/zmq/publisher.cpp > CMakeFiles/publisher.dir/publisher.cpp.i
+CMakeFiles/publisher.dir/test/publisher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/publisher.dir/test/publisher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riccardo/repos/zmq/test/publisher.cpp > CMakeFiles/publisher.dir/test/publisher.cpp.i
 
-CMakeFiles/publisher.dir/publisher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/publisher.dir/publisher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riccardo/repos/zmq/publisher.cpp -o CMakeFiles/publisher.dir/publisher.cpp.s
+CMakeFiles/publisher.dir/test/publisher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/publisher.dir/test/publisher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riccardo/repos/zmq/test/publisher.cpp -o CMakeFiles/publisher.dir/test/publisher.cpp.s
 
 # Object files for target publisher
 publisher_OBJECTS = \
-"CMakeFiles/publisher.dir/publisher.cpp.o"
+"CMakeFiles/publisher.dir/test/publisher.cpp.o"
 
 # External object files for target publisher
 publisher_EXTERNAL_OBJECTS =
 
-publisher: CMakeFiles/publisher.dir/publisher.cpp.o
+publisher: CMakeFiles/publisher.dir/test/publisher.cpp.o
 publisher: CMakeFiles/publisher.dir/build.make
 publisher: CMakeFiles/publisher.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable publisher"

@@ -69,28 +69,28 @@ include CMakeFiles/sub_a.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sub_a.dir/flags.make
 
-CMakeFiles/sub_a.dir/sub_a.cpp.o: CMakeFiles/sub_a.dir/flags.make
-CMakeFiles/sub_a.dir/sub_a.cpp.o: /home/riccardo/repos/zmq/sub_a.cpp
-CMakeFiles/sub_a.dir/sub_a.cpp.o: CMakeFiles/sub_a.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sub_a.dir/sub_a.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sub_a.dir/sub_a.cpp.o -MF CMakeFiles/sub_a.dir/sub_a.cpp.o.d -o CMakeFiles/sub_a.dir/sub_a.cpp.o -c /home/riccardo/repos/zmq/sub_a.cpp
+CMakeFiles/sub_a.dir/test/sub_a.cpp.o: CMakeFiles/sub_a.dir/flags.make
+CMakeFiles/sub_a.dir/test/sub_a.cpp.o: /home/riccardo/repos/zmq/test/sub_a.cpp
+CMakeFiles/sub_a.dir/test/sub_a.cpp.o: CMakeFiles/sub_a.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sub_a.dir/test/sub_a.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sub_a.dir/test/sub_a.cpp.o -MF CMakeFiles/sub_a.dir/test/sub_a.cpp.o.d -o CMakeFiles/sub_a.dir/test/sub_a.cpp.o -c /home/riccardo/repos/zmq/test/sub_a.cpp
 
-CMakeFiles/sub_a.dir/sub_a.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sub_a.dir/sub_a.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riccardo/repos/zmq/sub_a.cpp > CMakeFiles/sub_a.dir/sub_a.cpp.i
+CMakeFiles/sub_a.dir/test/sub_a.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sub_a.dir/test/sub_a.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/riccardo/repos/zmq/test/sub_a.cpp > CMakeFiles/sub_a.dir/test/sub_a.cpp.i
 
-CMakeFiles/sub_a.dir/sub_a.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sub_a.dir/sub_a.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riccardo/repos/zmq/sub_a.cpp -o CMakeFiles/sub_a.dir/sub_a.cpp.s
+CMakeFiles/sub_a.dir/test/sub_a.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sub_a.dir/test/sub_a.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/riccardo/repos/zmq/test/sub_a.cpp -o CMakeFiles/sub_a.dir/test/sub_a.cpp.s
 
 # Object files for target sub_a
 sub_a_OBJECTS = \
-"CMakeFiles/sub_a.dir/sub_a.cpp.o"
+"CMakeFiles/sub_a.dir/test/sub_a.cpp.o"
 
 # External object files for target sub_a
 sub_a_EXTERNAL_OBJECTS =
 
-sub_a: CMakeFiles/sub_a.dir/sub_a.cpp.o
+sub_a: CMakeFiles/sub_a.dir/test/sub_a.cpp.o
 sub_a: CMakeFiles/sub_a.dir/build.make
 sub_a: CMakeFiles/sub_a.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/riccardo/repos/zmq/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sub_a"

@@ -13,12 +13,15 @@ pkg_check_modules(ZMQ REQUIRED libzmq)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cppzmq)
 include_directories(${ZMQ_INCLUDE_DIRS})
 
-# Aggiungi eseguibili
-add_executable(publisher publisher.cpp)
+# Aggiungi eseguibili per i test
+add_executable(publisher test/publisher.cpp)
 target_link_libraries(publisher ${ZMQ_LIBRARIES})
 
-add_executable(sub_a sub_a.cpp)
+add_executable(sub_a test/sub_a.cpp)
 target_link_libraries(sub_a ${ZMQ_LIBRARIES})
 
-add_executable(sub_b sub_b.cpp)
+add_executable(sub_b test/sub_b.cpp)
 target_link_libraries(sub_b ${ZMQ_LIBRARIES})
+
+# Aggiungi eseguibile per l'app principale
+add_executable(zmq_wrapper zmq_wrapper.cpp)

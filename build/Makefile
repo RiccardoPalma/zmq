@@ -155,77 +155,77 @@ sub_b/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/build
 .PHONY : sub_b/fast
 
-publisher.o: publisher.cpp.o
-.PHONY : publisher.o
+test/publisher.o: test/publisher.cpp.o
+.PHONY : test/publisher.o
 
 # target to build an object file
-publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/publisher.cpp.o
-.PHONY : publisher.cpp.o
+test/publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.o
+.PHONY : test/publisher.cpp.o
 
-publisher.i: publisher.cpp.i
-.PHONY : publisher.i
+test/publisher.i: test/publisher.cpp.i
+.PHONY : test/publisher.i
 
 # target to preprocess a source file
-publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/publisher.cpp.i
-.PHONY : publisher.cpp.i
+test/publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.i
+.PHONY : test/publisher.cpp.i
 
-publisher.s: publisher.cpp.s
-.PHONY : publisher.s
+test/publisher.s: test/publisher.cpp.s
+.PHONY : test/publisher.s
 
 # target to generate assembly for a file
-publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/publisher.cpp.s
-.PHONY : publisher.cpp.s
+test/publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.s
+.PHONY : test/publisher.cpp.s
 
-sub_a.o: sub_a.cpp.o
-.PHONY : sub_a.o
+test/sub_a.o: test/sub_a.cpp.o
+.PHONY : test/sub_a.o
 
 # target to build an object file
-sub_a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/sub_a.cpp.o
-.PHONY : sub_a.cpp.o
+test/sub_a.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.o
+.PHONY : test/sub_a.cpp.o
 
-sub_a.i: sub_a.cpp.i
-.PHONY : sub_a.i
+test/sub_a.i: test/sub_a.cpp.i
+.PHONY : test/sub_a.i
 
 # target to preprocess a source file
-sub_a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/sub_a.cpp.i
-.PHONY : sub_a.cpp.i
+test/sub_a.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.i
+.PHONY : test/sub_a.cpp.i
 
-sub_a.s: sub_a.cpp.s
-.PHONY : sub_a.s
+test/sub_a.s: test/sub_a.cpp.s
+.PHONY : test/sub_a.s
 
 # target to generate assembly for a file
-sub_a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/sub_a.cpp.s
-.PHONY : sub_a.cpp.s
+test/sub_a.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.s
+.PHONY : test/sub_a.cpp.s
 
-sub_b.o: sub_b.cpp.o
-.PHONY : sub_b.o
+test/sub_b.o: test/sub_b.cpp.o
+.PHONY : test/sub_b.o
 
 # target to build an object file
-sub_b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/sub_b.cpp.o
-.PHONY : sub_b.cpp.o
+test/sub_b.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.o
+.PHONY : test/sub_b.cpp.o
 
-sub_b.i: sub_b.cpp.i
-.PHONY : sub_b.i
+test/sub_b.i: test/sub_b.cpp.i
+.PHONY : test/sub_b.i
 
 # target to preprocess a source file
-sub_b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/sub_b.cpp.i
-.PHONY : sub_b.cpp.i
+test/sub_b.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.i
+.PHONY : test/sub_b.cpp.i
 
-sub_b.s: sub_b.cpp.s
-.PHONY : sub_b.s
+test/sub_b.s: test/sub_b.cpp.s
+.PHONY : test/sub_b.s
 
 # target to generate assembly for a file
-sub_b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/sub_b.cpp.s
-.PHONY : sub_b.cpp.s
+test/sub_b.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.s
+.PHONY : test/sub_b.cpp.s
 
 # Help Target
 help:
@@ -238,15 +238,15 @@ help:
 	@echo "... publisher"
 	@echo "... sub_a"
 	@echo "... sub_b"
-	@echo "... publisher.o"
-	@echo "... publisher.i"
-	@echo "... publisher.s"
-	@echo "... sub_a.o"
-	@echo "... sub_a.i"
-	@echo "... sub_a.s"
-	@echo "... sub_b.o"
-	@echo "... sub_b.i"
-	@echo "... sub_b.s"
+	@echo "... test/publisher.o"
+	@echo "... test/publisher.i"
+	@echo "... test/publisher.s"
+	@echo "... test/sub_a.o"
+	@echo "... test/sub_a.i"
+	@echo "... test/sub_a.s"
+	@echo "... test/sub_b.o"
+	@echo "... test/sub_b.i"
+	@echo "... test/sub_b.s"
 .PHONY : help
 
 
