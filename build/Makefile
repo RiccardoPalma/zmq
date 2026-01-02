@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named publisher
+# Target rules for targets named simple_publisher
 
 # Build rule for target.
-publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher
-.PHONY : publisher
+simple_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_publisher
+.PHONY : simple_publisher
 
 # fast build rule for target.
-publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
+simple_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/build
+.PHONY : simple_publisher/fast
 
 #=============================================================================
 # Target rules for targets named sub_a
@@ -155,12 +155,99 @@ sub_b/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/build
 .PHONY : sub_b/fast
 
+#=============================================================================
+# Target rules for targets named broker
+
+# Build rule for target.
+broker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 broker
+.PHONY : broker
+
+# fast build rule for target.
+broker/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/broker.dir/build.make CMakeFiles/broker.dir/build
+.PHONY : broker/fast
+
+#=============================================================================
+# Target rules for targets named sniffer
+
+# Build rule for target.
+sniffer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sniffer
+.PHONY : sniffer
+
+# fast build rule for target.
+sniffer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/build
+.PHONY : sniffer/fast
+
+#=============================================================================
+# Target rules for targets named publisher
+
+# Build rule for target.
+publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 publisher
+.PHONY : publisher
+
+# fast build rule for target.
+publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/build
+.PHONY : publisher/fast
+
+rp_publisher.o: rp_publisher.cpp.o
+.PHONY : rp_publisher.o
+
+# target to build an object file
+rp_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/rp_publisher.cpp.o
+.PHONY : rp_publisher.cpp.o
+
+rp_publisher.i: rp_publisher.cpp.i
+.PHONY : rp_publisher.i
+
+# target to preprocess a source file
+rp_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/rp_publisher.cpp.i
+.PHONY : rp_publisher.cpp.i
+
+rp_publisher.s: rp_publisher.cpp.s
+.PHONY : rp_publisher.s
+
+# target to generate assembly for a file
+rp_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/rp_publisher.cpp.s
+.PHONY : rp_publisher.cpp.s
+
+rp_sniffer.o: rp_sniffer.cpp.o
+.PHONY : rp_sniffer.o
+
+# target to build an object file
+rp_sniffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/rp_sniffer.cpp.o
+.PHONY : rp_sniffer.cpp.o
+
+rp_sniffer.i: rp_sniffer.cpp.i
+.PHONY : rp_sniffer.i
+
+# target to preprocess a source file
+rp_sniffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/rp_sniffer.cpp.i
+.PHONY : rp_sniffer.cpp.i
+
+rp_sniffer.s: rp_sniffer.cpp.s
+.PHONY : rp_sniffer.s
+
+# target to generate assembly for a file
+rp_sniffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/rp_sniffer.cpp.s
+.PHONY : rp_sniffer.cpp.s
+
 test/publisher.o: test/publisher.cpp.o
 .PHONY : test/publisher.o
 
 # target to build an object file
 test/publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.o
 .PHONY : test/publisher.cpp.o
 
 test/publisher.i: test/publisher.cpp.i
@@ -168,7 +255,7 @@ test/publisher.i: test/publisher.cpp.i
 
 # target to preprocess a source file
 test/publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.i
 .PHONY : test/publisher.cpp.i
 
 test/publisher.s: test/publisher.cpp.s
@@ -176,7 +263,7 @@ test/publisher.s: test/publisher.cpp.s
 
 # target to generate assembly for a file
 test/publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/publisher.dir/build.make CMakeFiles/publisher.dir/test/publisher.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.s
 .PHONY : test/publisher.cpp.s
 
 test/sub_a.o: test/sub_a.cpp.o
@@ -227,6 +314,30 @@ test/sub_b.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.s
 .PHONY : test/sub_b.cpp.s
 
+zmq_broker.o: zmq_broker.cpp.o
+.PHONY : zmq_broker.o
+
+# target to build an object file
+zmq_broker.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/broker.dir/build.make CMakeFiles/broker.dir/zmq_broker.cpp.o
+.PHONY : zmq_broker.cpp.o
+
+zmq_broker.i: zmq_broker.cpp.i
+.PHONY : zmq_broker.i
+
+# target to preprocess a source file
+zmq_broker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/broker.dir/build.make CMakeFiles/broker.dir/zmq_broker.cpp.i
+.PHONY : zmq_broker.cpp.i
+
+zmq_broker.s: zmq_broker.cpp.s
+.PHONY : zmq_broker.s
+
+# target to generate assembly for a file
+zmq_broker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/broker.dir/build.make CMakeFiles/broker.dir/zmq_broker.cpp.s
+.PHONY : zmq_broker.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -235,9 +346,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... broker"
 	@echo "... publisher"
+	@echo "... simple_publisher"
+	@echo "... sniffer"
 	@echo "... sub_a"
 	@echo "... sub_b"
+	@echo "... rp_publisher.o"
+	@echo "... rp_publisher.i"
+	@echo "... rp_publisher.s"
+	@echo "... rp_sniffer.o"
+	@echo "... rp_sniffer.i"
+	@echo "... rp_sniffer.s"
 	@echo "... test/publisher.o"
 	@echo "... test/publisher.i"
 	@echo "... test/publisher.s"
@@ -247,6 +367,9 @@ help:
 	@echo "... test/sub_b.o"
 	@echo "... test/sub_b.i"
 	@echo "... test/sub_b.s"
+	@echo "... zmq_broker.o"
+	@echo "... zmq_broker.i"
+	@echo "... zmq_broker.s"
 .PHONY : help
 
 

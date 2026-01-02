@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/riccardo/repos/zmq/cppzmq
+CXX_INCLUDES = -I/home/riccardo/repos/zmq -I/home/riccardo/repos/zmq/cppzmq
 
 CXX_FLAGS = -std=gnu++17
 

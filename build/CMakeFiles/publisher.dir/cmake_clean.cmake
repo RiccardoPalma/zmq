@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/publisher.dir/test/publisher.cpp.o"
-  "CMakeFiles/publisher.dir/test/publisher.cpp.o.d"
+  "CMakeFiles/publisher.dir/rp_publisher.cpp.o"
+  "CMakeFiles/publisher.dir/rp_publisher.cpp.o.d"
   "publisher"
   "publisher.pdb"
 )

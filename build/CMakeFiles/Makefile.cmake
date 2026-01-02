@@ -47,7 +47,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/publisher.dir/DependInfo.cmake"
+  "CMakeFiles/simple_publisher.dir/DependInfo.cmake"
   "CMakeFiles/sub_a.dir/DependInfo.cmake"
   "CMakeFiles/sub_b.dir/DependInfo.cmake"
+  "CMakeFiles/broker.dir/DependInfo.cmake"
+  "CMakeFiles/sniffer.dir/DependInfo.cmake"
+  "CMakeFiles/publisher.dir/DependInfo.cmake"
   )
