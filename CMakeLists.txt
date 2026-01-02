@@ -14,14 +14,14 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/cppzmq)
 include_directories(${ZMQ_INCLUDE_DIRS})
 
 # Aggiungi eseguibili per i test
-add_executable(simple_publisher test/publisher.cpp)
-target_link_libraries(simple_publisher ${ZMQ_LIBRARIES})
+add_executable(test_pub test/pub.cpp)
+target_link_libraries(test_pub ${ZMQ_LIBRARIES})
 
-add_executable(sub_a test/sub_a.cpp)
-target_link_libraries(sub_a ${ZMQ_LIBRARIES})
+add_executable(test_suba test/sub_a.cpp)
+target_link_libraries(test_suba ${ZMQ_LIBRARIES})
 
-add_executable(sub_b test/sub_b.cpp)
-target_link_libraries(sub_b ${ZMQ_LIBRARIES})
+add_executable(test_subb test/sub_b.cpp)
+target_link_libraries(test_subb ${ZMQ_LIBRARIES})
 
 add_executable(broker zmq_broker.cpp)
 target_link_libraries(broker ${ZMQ_LIBRARIES})

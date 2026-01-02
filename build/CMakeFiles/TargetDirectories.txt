@@ -1,6 +1,6 @@
-/home/riccardo/repos/zmq/build/CMakeFiles/simple_publisher.dir
-/home/riccardo/repos/zmq/build/CMakeFiles/sub_a.dir
-/home/riccardo/repos/zmq/build/CMakeFiles/sub_b.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/test_pub.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/test_suba.dir
+/home/riccardo/repos/zmq/build/CMakeFiles/test_subb.dir
 /home/riccardo/repos/zmq/build/CMakeFiles/broker.dir
 /home/riccardo/repos/zmq/build/CMakeFiles/sniffer.dir
 /home/riccardo/repos/zmq/build/CMakeFiles/publisher.dir

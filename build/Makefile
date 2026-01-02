@@ -117,43 +117,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named simple_publisher
+# Target rules for targets named test_pub
 
 # Build rule for target.
-simple_publisher: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simple_publisher
-.PHONY : simple_publisher
+test_pub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_pub
+.PHONY : test_pub
 
 # fast build rule for target.
-simple_publisher/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/build
-.PHONY : simple_publisher/fast
+test_pub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pub.dir/build.make CMakeFiles/test_pub.dir/build
+.PHONY : test_pub/fast
 
 #=============================================================================
-# Target rules for targets named sub_a
+# Target rules for targets named test_suba
 
 # Build rule for target.
-sub_a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sub_a
-.PHONY : sub_a
+test_suba: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_suba
+.PHONY : test_suba
 
 # fast build rule for target.
-sub_a/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/build
-.PHONY : sub_a/fast
+test_suba/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_suba.dir/build.make CMakeFiles/test_suba.dir/build
+.PHONY : test_suba/fast
 
 #=============================================================================
-# Target rules for targets named sub_b
+# Target rules for targets named test_subb
 
 # Build rule for target.
-sub_b: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sub_b
-.PHONY : sub_b
+test_subb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_subb
+.PHONY : test_subb
 
 # fast build rule for target.
-sub_b/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/build
-.PHONY : sub_b/fast
+test_subb/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_subb.dir/build.make CMakeFiles/test_subb.dir/build
+.PHONY : test_subb/fast
 
 #=============================================================================
 # Target rules for targets named broker
@@ -242,36 +242,36 @@ rp_sniffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sniffer.dir/build.make CMakeFiles/sniffer.dir/rp_sniffer.cpp.s
 .PHONY : rp_sniffer.cpp.s
 
-test/publisher.o: test/publisher.cpp.o
-.PHONY : test/publisher.o
+test/pub.o: test/pub.cpp.o
+.PHONY : test/pub.o
 
 # target to build an object file
-test/publisher.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.o
-.PHONY : test/publisher.cpp.o
+test/pub.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pub.dir/build.make CMakeFiles/test_pub.dir/test/pub.cpp.o
+.PHONY : test/pub.cpp.o
 
-test/publisher.i: test/publisher.cpp.i
-.PHONY : test/publisher.i
+test/pub.i: test/pub.cpp.i
+.PHONY : test/pub.i
 
 # target to preprocess a source file
-test/publisher.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.i
-.PHONY : test/publisher.cpp.i
+test/pub.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pub.dir/build.make CMakeFiles/test_pub.dir/test/pub.cpp.i
+.PHONY : test/pub.cpp.i
 
-test/publisher.s: test/publisher.cpp.s
-.PHONY : test/publisher.s
+test/pub.s: test/pub.cpp.s
+.PHONY : test/pub.s
 
 # target to generate assembly for a file
-test/publisher.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_publisher.dir/build.make CMakeFiles/simple_publisher.dir/test/publisher.cpp.s
-.PHONY : test/publisher.cpp.s
+test/pub.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_pub.dir/build.make CMakeFiles/test_pub.dir/test/pub.cpp.s
+.PHONY : test/pub.cpp.s
 
 test/sub_a.o: test/sub_a.cpp.o
 .PHONY : test/sub_a.o
 
 # target to build an object file
 test/sub_a.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_suba.dir/build.make CMakeFiles/test_suba.dir/test/sub_a.cpp.o
 .PHONY : test/sub_a.cpp.o
 
 test/sub_a.i: test/sub_a.cpp.i
@@ -279,7 +279,7 @@ test/sub_a.i: test/sub_a.cpp.i
 
 # target to preprocess a source file
 test/sub_a.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_suba.dir/build.make CMakeFiles/test_suba.dir/test/sub_a.cpp.i
 .PHONY : test/sub_a.cpp.i
 
 test/sub_a.s: test/sub_a.cpp.s
@@ -287,7 +287,7 @@ test/sub_a.s: test/sub_a.cpp.s
 
 # target to generate assembly for a file
 test/sub_a.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_a.dir/build.make CMakeFiles/sub_a.dir/test/sub_a.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_suba.dir/build.make CMakeFiles/test_suba.dir/test/sub_a.cpp.s
 .PHONY : test/sub_a.cpp.s
 
 test/sub_b.o: test/sub_b.cpp.o
@@ -295,7 +295,7 @@ test/sub_b.o: test/sub_b.cpp.o
 
 # target to build an object file
 test/sub_b.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_subb.dir/build.make CMakeFiles/test_subb.dir/test/sub_b.cpp.o
 .PHONY : test/sub_b.cpp.o
 
 test/sub_b.i: test/sub_b.cpp.i
@@ -303,7 +303,7 @@ test/sub_b.i: test/sub_b.cpp.i
 
 # target to preprocess a source file
 test/sub_b.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_subb.dir/build.make CMakeFiles/test_subb.dir/test/sub_b.cpp.i
 .PHONY : test/sub_b.cpp.i
 
 test/sub_b.s: test/sub_b.cpp.s
@@ -311,7 +311,7 @@ test/sub_b.s: test/sub_b.cpp.s
 
 # target to generate assembly for a file
 test/sub_b.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_b.dir/build.make CMakeFiles/sub_b.dir/test/sub_b.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_subb.dir/build.make CMakeFiles/test_subb.dir/test/sub_b.cpp.s
 .PHONY : test/sub_b.cpp.s
 
 zmq_broker.o: zmq_broker.cpp.o
@@ -348,19 +348,19 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... broker"
 	@echo "... publisher"
-	@echo "... simple_publisher"
 	@echo "... sniffer"
-	@echo "... sub_a"
-	@echo "... sub_b"
+	@echo "... test_pub"
+	@echo "... test_suba"
+	@echo "... test_subb"
 	@echo "... rp_publisher.o"
 	@echo "... rp_publisher.i"
 	@echo "... rp_publisher.s"
 	@echo "... rp_sniffer.o"
 	@echo "... rp_sniffer.i"
 	@echo "... rp_sniffer.s"
-	@echo "... test/publisher.o"
-	@echo "... test/publisher.i"
-	@echo "... test/publisher.s"
+	@echo "... test/pub.o"
+	@echo "... test/pub.i"
+	@echo "... test/pub.s"
 	@echo "... test/sub_a.o"
 	@echo "... test/sub_a.i"
 	@echo "... test/sub_a.s"

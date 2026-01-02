@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/sub_b.dir/test/sub_b.cpp.o -o sub_b  -lzmq 
