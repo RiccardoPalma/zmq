@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     while (true) {
         zmq::message_t msg;
         try {
-            sub.recv(msg, zmq::recv_flags::none);
+            zmq::recv_result_t res = sub.recv(msg, zmq::recv_flags::none);
         } catch(const zmq::error_t& e) {
             std::cerr << "ZMQ error: " << e.what() << "\n";
             continue;

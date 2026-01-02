@@ -61,10 +61,10 @@ private:
     void recv_loop() {
         zmq::pollitem_t items[] = { { sub, 0, ZMQ_POLLIN, 0 } };
         while (running) {
-            zmq::poll(items, 1, 100);
+            zmq::poll(items, 1, std::chrono::milliseconds(100));
             if(items[0].revents & ZMQ_POLLIN) {
                 zmq::message_t msg;
-                sub.recv(msg, zmq::recv_flags::none);
+                zmq::recv_result_t res = sub.recv(msg, zmq::recv_flags::none);
                 std::string s(static_cast<char*>(msg.data()), msg.size());
                 auto pos = s.find(' ');
                 std::string topic = (pos==std::string::npos ? s : s.substr(0,pos));
